@@ -79,19 +79,37 @@ function listar(i, f) {
 
 //EVENTOS: ONCLICK, ONMOUSEOVER, ONFOCUS, ONBLUR, ONCHANGE, ONLOAD
 
-function encender(){
-    var img = document.getElementById('imagen');
-    img.src='on.gif';
-    console.log(img.src);
+// function encender(){
+//     var img = document.getElementById('imagen');
+//     img.src='on.gif';
+//     console.log(img.src);
+// }
+// function apagar(){
+//     var img = document.getElementById('imagen');
+//     img.src='off.gif';
+//     console.log(img.src);
+// }
+// var botonE = document.querySelector("#be");
+// botonE.onclick = encender;
+// var botonA = document.querySelector("#ba");
+// botonA.onclick = apagar;
+
+
+function cambioaVerde() {
+    var verde = document.getElementById("cajita").style.borderColor = "green";
 }
-function apagar(){
-    var img = document.getElementById('imagen');
-    img.src='off.gif';
-    console.log(img.src);
+
+
+
+function mostrarAzul() {
+    var caja = document.getElementById('cajita')
+    console.log(caja)
+    caja.setAttribute('style', 'background-color: blue;')
 }
-var botonE = document.querySelector("#be");
-botonE.onclick = encender;
-var botonA = document.querySelector("#ba");
-botonA.onclick = apagar;
+
+function cambiarColor(color) {
+    let cajita = document.getElementById("cajita");
+    cajita.style.backgroundColor = color;
+}
 
 
